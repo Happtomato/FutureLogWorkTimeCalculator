@@ -3,6 +3,7 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "Firebase/auth";
 import { signInWithEmailAndPassword } from "Firebase/auth";
 import { useNavigate } from "svelte-navigator";
+import {Accordion} from "flowbite-svelte";
 
 const firebaseConfig = {
     apiKey: "AIzaSyADxhEkmy3jeQMsLbwLDkNGK_cca5X10bw",
@@ -20,15 +21,16 @@ const auth = getAuth(app);
 
 let email = "";
 let password = "";
-
+let errorBool = false;
 async function signIn(event) {
     try {
         let user = await signInWithEmailAndPassword(auth, event.detail.email, event.detail.password)
     } catch (error) {
         console.log("error signin in", error.message)
         error = error.message
+        errorBool = true;
     }
-    await ()
+    await (signIn)
 }
 
 
@@ -53,10 +55,11 @@ async function signIn(event) {
                             <label for="password" class="absolute left-3 -top-5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-5 peer-focus:text-gray-600 peer-focus:text-sm">Password</label>
                         </div>
                         <div class="relative">
-                            <button on:click={logIn()} class="bg-blue-500 text-white rounded-md px-3 py-1 mt-2 mb-5">Sign In</button>
+                            <button on:click={signIn()} class="bg-blue-500 text-white rounded-md px-3 py-1 mt-2 mb-5">Sign In</button>
                             <br>
                             <p class="text-sm inline">No account?</p> <a class="text-sm inline text-orange-600" href="*">Sign Up instead</a>
                         </div>
+                        {#if !errorBool}
                     </div>
                 </div>
             </div>
