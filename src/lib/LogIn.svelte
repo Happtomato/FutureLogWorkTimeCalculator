@@ -30,7 +30,6 @@ async function signIn(event) {
         error = error.message
         errorBool = true;
     }
-    await (signIn)
 }
 
 
@@ -59,7 +58,6 @@ async function signIn(event) {
                             <br>
                             <p class="text-sm inline">No account?</p> <a class="text-sm inline text-orange-600" href="*">Sign Up instead</a>
                         </div>
-                        {#if !errorBool}
                     </div>
                 </div>
             </div>

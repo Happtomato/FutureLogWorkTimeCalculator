@@ -10,6 +10,9 @@
     "check": "svelte-check --tsconfig ./tsconfig.json"
   },
   "devDependencies": {
+    "@event-calendar/core": "^0.17.0",
+    "@event-calendar/list": "^0.17.0",
+    "@event-calendar/time-grid": "^0.17.0",
     "@sveltejs/vite-plugin-svelte": "^2.0.2",
     "@tsconfig/svelte": "^3.0.0",
     "autoprefixer": "^10.4.7",

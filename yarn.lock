@@ -7,6 +7,37 @@
   "resolved" "https://registry.npmjs.org/@esbuild/darwin-arm64/-/darwin-arm64-0.16.17.tgz"
   "version" "0.16.17"
 
+"@event-calendar/common@~0.17.0":
+  "integrity" "sha512-frFV2HW/ZbcE1mdkxcbYhD9mAESWpVJCCQT8fW5pGlch6l0T/FpUkfio/rBEn+1aAxNMTaSNli14gWqovtVoUg=="
+  "resolved" "https://registry.npmjs.org/@event-calendar/common/-/common-0.17.0.tgz"
+  "version" "0.17.0"
+  dependencies:
+    "svelte" "^3.55.1"
+
+"@event-calendar/core@^0.17.0":
+  "integrity" "sha512-QoZ4jZmVucMVYtQpRp9IX9CXKknxq1DVycxiLpFiAlwYXkZHXKPXMA+EtMLx/OOuUAnjQC1huZON5kIP0un5jw=="
+  "resolved" "https://registry.npmjs.org/@event-calendar/core/-/core-0.17.0.tgz"
+  "version" "0.17.0"
+  dependencies:
+    "@event-calendar/common" "~0.17.0"
+    "svelte" "^3.55.1"
+
+"@event-calendar/list@^0.17.0":
+  "integrity" "sha512-DEebqWw5NN+zDZZ+ZE0s9ZLIfbDpcmXIkXZdQKqirFdtv6FZv0+WhZ1Lzq8V+o4pkawVGhlXdeMCTTTdd2Xd0A=="
+  "resolved" "https://registry.npmjs.org/@event-calendar/list/-/list-0.17.0.tgz"
+  "version" "0.17.0"
+  dependencies:
+    "@event-calendar/common" "~0.17.0"
+    "svelte" "^3.55.1"
+
+"@event-calendar/time-grid@^0.17.0":
+  "integrity" "sha512-+k8SXXohLUUo/eo2M7TnpfRF/lghuJL8cMbiW6PEIAaNFDZebviZ492r2RGWY166Bba9sBe2p2wT4aO4YQ//Mw=="
+  "resolved" "https://registry.npmjs.org/@event-calendar/time-grid/-/time-grid-0.17.0.tgz"
+  "version" "0.17.0"
+  dependencies:
+    "@event-calendar/common" "~0.17.0"
+    "svelte" "^3.55.1"
+
 "@firebase/analytics-compat@0.2.3":
   "integrity" "sha512-HmvbB4GMgh8AUlIDIo/OuFENLCGRXxMvtOueK+m8+DcfqBvG+mkii0Mi9ovo0TnMM62cy3oBYG7PHdjIQNLSLA=="
   "resolved" "https://registry.npmjs.org/@firebase/analytics-compat/-/analytics-compat-0.2.3.tgz"
